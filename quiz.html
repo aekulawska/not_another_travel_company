@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="quiz-bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navigation-bar.css">
+    <title>NATC | QUIZ</title>
+</head>
+
+<!--BODY-->
+
+<body>
+
+    <!--NAV-->
+    <div class="nav">
+        <div class="nav-hamburger">
+            <a class="nav-menu">
+                <div class="menu-one"></div>
+                <div class="menu-two"></div>
+                <div class="menu-thee"></div>
+            </a>
+        </div>
+        <div class="nav-dropdown hidden">
+            <a href="./index.html">Home</a>
+            <a href="./contact.html">Contacts</a>
+        </div>
+        <a href="./index.html"><img class="logo" src="./img/Logo.png" /></a>
+    </div>
+
+    <div id="quiz">
+        <h1>What is your perfect holiday?</h1>
+        <h2>You are just one quiz away from finding out the answer!</h2>
+
+        <form id="quiz-form">
+            <div class="question">
+                <!-- Question 1 -->
+                <h2>What do you like to do the most?</h2>
+                <!--Q1 ANSWERS-->
+                <label><input type="radio" name="q1" value="p" required>
+                    Partying!
+                </label><br />
+                <label><input type="radio" name="q1" value="b">
+                    Relaxing in my garden!
+                </label><br />
+                <label><input type="radio" name="q1" value="a">
+                    Exploring and taking risks!
+                </label><br />
+                <label><input type="radio" name="q1" value="m">
+                    Getting lost in my own thoughts!
+                </label><br />
+            </div>
+
+            <div class="question">
+                <!-- Question 2 -->
+                <h2>What music do you like most?</h2>
+                <!--Q2 ANSWERS-->
+                <label><input type="radio" name="q2" value="m" required>
+                    Love song
+                </label><br />
+                <label><input type="radio" name="q2" value="b">
+                    Classical
+                </label><br />
+                <label><input type="radio" name="q2" value="a">
+                    Something fast-paced go get my heart going
+                </label><br />
+                <label><input type="radio" name="q2" value="p">
+                    Pop
+                </label><br />
+            </div>
+
+            <div class="question">
+                <!-- Question 3 -->
+                <h2>What is your ideal workplace?</h2>
+                <!--Q3 ANSWERS-->
+                <label><input type="radio" name="q3" value="b" required>
+                    Somewhere relaxing and calm
+                </label><br />
+                <label><input type="radio" name="q3" value="a">
+                    Somewhere fun and challenging
+                </label><br />
+                <label><input type="radio" name="q3" value="p">
+                    Somewhere with fun people and good music
+                </label><br />
+                <label><input type="radio" name="q3" value="m">
+                    Somewhere mysterious
+                </label><br />
+            </div>
+
+            <div class="question">
+
+                <!-- Question 4 -->
+                <h2>Which movie do you prefer?</h2>
+                <!--Q4 ANSWERS-->
+                <label><input type="radio" name="q4" value="a" required>
+                    Indiana Jones
+                </label><br />
+                <label><input type="radio" name="q4" value="p">
+                    Hangover
+                </label><br />
+                <label><input type="radio" name="q4" value="b">
+                    Friends Reunion
+                </label><br />
+                <label><input type="radio" name="q4" value="m">
+                    Constantine
+                </label><br />
+            </div>
+
+            <div class="question">
+
+                <!-- Question 5 -->
+                <h2>What would be your perfect food?</h2>
+                <!--Q4 ANSWERS-->
+                <label><input type="radio" name="q5" value="m" required>
+                    Exotic food!
+                </label><br />
+                <label><input type="radio" name="q5" value="p">
+                    Drinks!
+                </label><br />
+                <label><input type="radio" name="q5" value="m">
+                    Anything spicy!
+                </label><br />
+                <label><input type="radio" name="q5" value="b">
+                    Burger or pizza
+                </label><br />
+            </div>
+
+        </form>
+
+        <!--Submit Button- Will Be Gone After Submission-->
+        <button type="submit" id="submit" class="button-1" onclick="checkAnswers()">Submit Your Answers</button>
+        <!--Hidden Button-->
+        <div id="answer">
+            <a href="#" id='submit-quiz' class="button-1">Check Your Answer!</a>
+        </div>
+
+    </div>
+
+    <script src="./js/calculate.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+* {
+	background-color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.section-wrap {
+	display: flex;
+	height: 85vh;
+}
+
+.column-left,
+.column-right {
+	width: 50vw;
+	border: black 1px solid;
+}
+
+.hidden {
+	display: none;
+}
+
+button {
+	border: none;
+	padding: 1rem;
+	font-size: 1.5rem;
+	transition: 0.3s;
+}
+
+button:hover {
+	cursor: pointer;
+    letter-spacing: 5px;
+}
+
+.button-left:hover, .button-right:hover {
+	letter-spacing: 10px;
+	font-size: 40px;
+}
+
+.button-decoration {
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.section-welcome {
+	text-align: center;
+}
+
+.section-welcome h2 {
+	padding: 1rem;
+}
+
+.section-text h2 {
+	padding: 2rem;
+	text-align: center;
+}
+
+.section-welcome h4 {
+	padding-top: 1rem;
+}
+
+.section-navigation,
+.button-decoration {
+	border-top: black solid 2px;
+	border-bottom: black solid 2px;
+}
+
+.section-navigation a {
+	text-decoration: none;
+	color: black;
+}
+
+.section-navigation ul {
+	text-align: center;
+}
+
+.section-navigation li {
+	list-style: none;
+	display: inline-block;
+	padding: 1rem;
+}
+
+.section-navigation a {
+	background-color: transparent;
+}
+
+.active {
+	background-color: #a3e1ee;
+}
+
+.section-text {
+	height: 60vh;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.section-text-main {
+	margin: auto;
+}
+
+.section-text-main.active-txt {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.section-text-gallery.active-txt {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.2s;
+}
+.section-text-gallery img {
+    max-width: 60%;
+	width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.section-text p {
+	text-align: justify;
+	line-height: 1.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.column-right {
+    overflow: hidden;
+}
+
+.column-right img {
+	margin-left: -100px;
+	height: 100%;
+	width: fit-content;
+}
+
+.section-footer {
+	text-align: center;
+	padding: 1rem;
+}
+
+@media(max-width:780px) {
+	.column-right {
+		display: none;
+	}
+
+	.column-left {
+		width: 100%;
+	}
+
+	.section-text {
+		overflow-y: scroll;
+    	overflow-x: hidden;
+	}
+}
